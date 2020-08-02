@@ -70,12 +70,12 @@
             <!-- Subject
             <!-- Message -->
 
-            <select class="browser-default custom-select mb-4">
-              <option value="" disabled>Choose option</option>
-              <option value="1" >Feedback</option>
-              <option value="2">Report a bug</option>
-              <option value="3">Feature request</option>
-              <option value="4">Feature request</option>
+            <select class="browser-default custom-select mb-4" id='pizza-top'>
+              <option value="" disabled>Choose toppings</option>
+              <option value="mashroom" >Mashroom</option>
+              <option value="sausage">Sausage</option>
+              <option value="bacon">Bacon</option>
+              <option value="cheese">Cheese</option>
             </select>
 
             <!-- Copy -->
@@ -84,9 +84,10 @@
               <label class="custom-control-label text-warning" for="defaultContactFormCopy">Deliver to you</label>
           </div>
             <!-- Send button -->
-            <button class="btn btn-danger btn-block" type="submit" id='checkout'>
+            <!-- <button class="btn btn-danger btn-block" type="submit" id='checkout'>
               order
-            </button>
+            </button> -->
+            <button type="button" class="btn btn-primary"  id='checkout' data-toggle="modal" data-target="#modalCart">confirm order</button>
             <div class="mt-5">
               <span class="text-success price-span">
                 Toatal Price <span class='' id='price'>0</span>
@@ -94,12 +95,58 @@
             </div>
           </form>
           <!-- Default form contact -->
+         
+
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Confirm your order</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Pizza Size</th>
+              <th>Pizza crust</th>
+              <th>Toatal Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id='finalsize' class='text-success'></th>
+              <td id='finalcrust' class='text-success'></td>
+              <td id='finalprice' class='text-success'></td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+          
+          </tbody>
+        </table>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <!------------------->
         </section>
       </div>
     </section>
     <section class="image_show_section">
       <div class='py-4'>
-        <h1 class='text-center text-warning'>DIshes of the day</h1>
+        <h1 class='text-center text-warning'>Dishes of the day</h1>
       </div>
       <div class="image_container">
         <div class="img_item">
