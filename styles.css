@@ -116,8 +116,8 @@
 
 @keyframes example {
    0%{
-    margin-left: 2rem;
-    opacity: 0.9;
+    margin-left: 3rem;
+    /* opacity: 0.9; */
    }
    50%{
     margin-left: 1rem;
@@ -125,8 +125,8 @@
     
    }
    100%{
-    margin-left: 2rem;
-    opacity: 0.8; 
+    margin-left: 3rem;
+    /* opacity: 0.8;  */
    }
   }
   @keyframes anime {
