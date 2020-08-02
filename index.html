@@ -59,7 +59,7 @@
               <option value="large">Large</option>
             </select>
             <!-- Email -->
-            <select class="browser-default custom-select mb-4" id='pizza-toppings'>
+            <select class="browser-default custom-select mb-4" id='pizza-crust'>
               <option value="" disabled>Choose option</option>
              
               <option value="crispy">Crispy</option>
@@ -67,16 +67,7 @@
               <option value="gluten">Gluten-free</option>
             </select>
 
-            <!-- Subject -->
-            <!-- <label>Subject</label> -->
-            <select class="browser-default custom-select mb-4">
-              <option value="" disabled>Choose option</option>
-              <option value="1" selected>Feedback</option>
-              <option value="2">Report a bug</option>
-              <option value="3">Feature request</option>
-              <option value="4">Feature request</option>
-            </select>
-
+            <!-- Subject
             <!-- Message -->
 
             <select class="browser-default custom-select mb-4">
@@ -88,7 +79,10 @@
             </select>
 
             <!-- Copy -->
-
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+              <label class="custom-control-label text-warning" for="defaultContactFormCopy">Deliver to you</label>
+          </div>
             <!-- Send button -->
             <button class="btn btn-danger btn-block" type="submit" id='checkout'>
               order
