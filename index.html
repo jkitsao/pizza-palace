@@ -51,20 +51,20 @@
             <p class="h4 mb-4 text-white">order a pizza</p>
 
             <!-- Name -->
-            <select class="browser-default custom-select mb-4">
-              <!-- <option value="" disabled>Choose Pizza size</option> -->
-              <option value="1" selected>Choose Pizza size</option>
-              <option value="2">Small</option>
-              <option value="3">Medium</option>
-              <option value="4">Large</option>
+            <select class="browser-default custom-select mb-4" id='pizza-size'>
+              <option value="" disabled>Choose Pizza size</option>
+              
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
             </select>
             <!-- Email -->
-            <select class="browser-default custom-select mb-4">
-              <!-- <option value="" disabled>Choose option</option> -->
-              <option value="1" selected>choose topings</option>
-              <option value="2">Crispy</option>
-              <option value="3">Stuffed</option>
-              <option value="4">Gluten-free</option>
+            <select class="browser-default custom-select mb-4" id='pizza-toppings'>
+              <option value="" disabled>Choose option</option>
+             
+              <option value="crispy">Crispy</option>
+              <option value="stuffed">Stuffed</option>
+              <option value="gluten">Gluten-free</option>
             </select>
 
             <!-- Subject -->
@@ -81,7 +81,7 @@
 
             <select class="browser-default custom-select mb-4">
               <option value="" disabled>Choose option</option>
-              <option value="1" selected>Feedback</option>
+              <option value="1" >Feedback</option>
               <option value="2">Report a bug</option>
               <option value="3">Feature request</option>
               <option value="4">Feature request</option>
@@ -90,12 +90,12 @@
             <!-- Copy -->
 
             <!-- Send button -->
-            <button class="btn btn-danger btn-block" type="submit">
+            <button class="btn btn-danger btn-block" type="submit" id='checkout'>
               order
             </button>
             <div class="mt-5">
-              <span class="text-success text-xl">
-                Toatal Price <span>2500</span>
+              <span class="text-success price-span">
+                Toatal Price <span class='' id='price'>0</span>
               </span>
             </div>
           </form>
@@ -104,6 +104,9 @@
       </div>
     </section>
     <section class="image_show_section">
+      <div class='py-4'>
+        <h1 class='text-center text-warning'>DIshes of the day</h1>
+      </div>
       <div class="image_container">
         <div class="img_item">
           <img

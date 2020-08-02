@@ -46,6 +46,9 @@
     max-height: 35rem;
     margin-top:4rem;
 }
+.price-span{
+    font-size: 1.5rem;
+}
 .hero_text_p{
     font-size: 1.2rem;
     color: white;
