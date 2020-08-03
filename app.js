@@ -2,7 +2,6 @@ const btn = document.getElementById("checkout");
 //select value of pizza size
 var s = document.getElementById("pizza-size");
 var t = document.getElementById("pizza-crust");
-var tp = document.getElementById("pizza-top");
 const deliver = document.getElementById("defaultContactFormCopy");
 //checkout modal
 const pizzaSize = document.getElementById("pizza-size");
@@ -47,6 +46,9 @@ const largeTops = {
 };
 
 btn.addEventListener("click", () => {
+  var tp = document.getElementById("pizza-top");
+  var toppings = tp.options[tp.selectedIndex].value;
+
   //get the modal data
   const finalcrust = document.getElementById("finalcrust");
   const finalsize = document.getElementById("finalsize");
@@ -55,7 +57,7 @@ btn.addEventListener("click", () => {
 
   var size = s.options[s.selectedIndex].value;
   var crust = t.options[t.selectedIndex].value;
-  var toppings = tp.options[tp.selectedIndex].value;
+
   console.log(toppings);
 
   if (size == "small") {
