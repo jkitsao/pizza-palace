@@ -1,4 +1,5 @@
-# Pizza palace
+<h1 style='color:green'> Pizza palace</h1>
+
 > Simple webapplication for a fictional restaurant that allows a customer to order different sizes of pizzas with one or more toppings. 
 
 
