@@ -72,7 +72,6 @@ btn.addEventListener("click", () => {
       finalcrust.innerText = crust;
       finalsize.innerText = size;
       finaltoping.innerText = toppings;
-
       finalprice.innerText =
         smallPizza + smallCrust.stuffed + smallTops.sausage;
     }
@@ -82,7 +81,6 @@ btn.addEventListener("click", () => {
       finalcrust.innerText = crust;
       finalsize.innerText = size;
       finaltoping.innerText = toppings;
-
       finalprice.innerText = smallPizza + smallCrust.gluten + smallTops.cheese;
     }
   }
