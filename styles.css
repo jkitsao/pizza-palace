@@ -86,6 +86,7 @@
 
 
 }
+
 /* .img_item:hover{
     animation-name: anime;
     animation-duration: 1.5s;
@@ -144,3 +145,50 @@
      /* opacity: 0.8;  */
     }
    }
+   @media only screen and (max-width: 800px) {
+    .hero_section{
+        position: relative;
+        height:80rem;
+        background-image: url('./images/dan-gold-E6HjQaB7UEA-unsplash.jpg');
+        background-repeat: no-repeat;
+        object-fit: cover;
+    
+    }
+    .order_form_section{
+        /* text-align: right; */
+        display:block;
+        /* justify-content: space-between; */
+        width:100%;
+         
+     }
+     .hero_text_img{
+        width:10rem;
+        animation-name: example;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      position: relative;
+      animation-timing-function: ease-in-out;
+    /* -webkit-animation-timing-function: ease-in-out; */
+    }
+    .image_container{
+        display:grid;
+        grid-template-columns:100%;
+        /* grid-template-rows:1fr 1fr; */
+        padding:0 8rem;
+        /* column-gap: 0.5rem; */
+        row-gap: 4rem;
+    
+    
+    }
+    .img_item{
+        width: 100%;
+        /* max-height: 23rem; */
+       
+    }
+    .image_show_section{
+        height: 100%;
+        background-color: black;
+        /* padding: 7rem 0; */
+    
+    }
+  }
