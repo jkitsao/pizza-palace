@@ -1,16 +1,17 @@
 # Pizza palace
 > Simple webapplication for a fictional restaurant that allows a customer to order different sizes of pizzas with one or more toppings. 
+
+
+
+![](./show.png)
+
 # How it works
 * Choose the size of pizza I want e.g Small, Medium, Large
 * Choose what kind of crust I would like the pizza to have e.g * Crispy, Stuffed, Gluten-free
 * Choose the topping(s) I want on my pizza.
 * Place an order for my Pizza and see the total charge for it.
 
-
-![](./show.png)
-
 ## Installation
-
 
 ```sh
 git clone https://github.com/jkitsao/pizza-palace.git
