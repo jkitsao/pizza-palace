@@ -8,7 +8,7 @@ const deliver = document.getElementById("defaultContactFormCopy");
 const pizzaSize = document.getElementById("pizza-size");
 const pizzaPrice = document.getElementById("pizza-price");
 
-//select value of
+//select value of pizza size
 var price = document.getElementById("price");
 var smallPizza = 1000;
 var mediumPizza = 2000;
@@ -51,6 +51,8 @@ btn.addEventListener("click", () => {
   const finalcrust = document.getElementById("finalcrust");
   const finalsize = document.getElementById("finalsize");
   const finalprice = document.getElementById("finalprice");
+  const finaltoping = document.getElementById("finaltoping");
+
   var size = s.options[s.selectedIndex].value;
   var crust = t.options[t.selectedIndex].value;
   var toppings = tp.options[tp.selectedIndex].value;
@@ -61,6 +63,7 @@ btn.addEventListener("click", () => {
       price.innerText = smallPizza + smallCrust.crispy + smallTops.mushroom;
       finalcrust.innerText = crust;
       finalsize.innerText = size;
+      finaltoping.innerText = toppings;
       finalprice.innerText =
         smallPizza + smallCrust.crispy + smallTops.mushroom;
     }
@@ -68,6 +71,8 @@ btn.addEventListener("click", () => {
       price.innerText = smallPizza + smallCrust.stuffed + smallTops.sausage;
       finalcrust.innerText = crust;
       finalsize.innerText = size;
+      finaltoping.innerText = toppings;
+
       finalprice.innerText =
         smallPizza + smallCrust.stuffed + smallTops.sausage;
     }
@@ -76,6 +81,8 @@ btn.addEventListener("click", () => {
       price.innerText = smallPizza + smallCrust.gluten + smallTops.cheese;
       finalcrust.innerText = crust;
       finalsize.innerText = size;
+      finaltoping.innerText = toppings;
+
       finalprice.innerText = smallPizza + smallCrust.gluten + smallTops.cheese;
     }
   }
@@ -84,6 +91,8 @@ btn.addEventListener("click", () => {
       price.innerText = mediumPizza + mediumCrust.crispy + mediumTops.mushroom;
       finalcrust.innerText = crust;
       finalsize.innerText = size;
+      finaltoping.innerText = toppings;
+
       finalprice.innerText =
         mediumPizza + mediumCrust.crispy + mediumTops.mushroom;
     }
@@ -92,6 +101,8 @@ btn.addEventListener("click", () => {
       price.innerText = mediumPizza + mediumCrust.stuffed + mediumTops.sausage;
       finalcrust.innerText = crust;
       finalsize.innerText = size;
+      finaltoping.innerText = toppings;
+
       finalprice.innerText =
         mediumPizza + mediumCrust.stuffed + mediumTops.sausage;
     }
@@ -100,6 +111,8 @@ btn.addEventListener("click", () => {
       price.innerText = mediumPizza + mediumCrust.gluten + mediumTops.cheese;
       finalcrust.innerText = crust;
       finalsize.innerText = size;
+      finaltoping.innerText = toppings;
+
       finalprice.innerText =
         mediumPizza + mediumCrust.gluten + mediumTops.cheese;
     }
@@ -109,6 +122,8 @@ btn.addEventListener("click", () => {
       price.innerText = largePizza + largeCrust.crispy + largeTops.mushroom;
       finalcrust.innerText = crust;
       finalsize.innerText = size;
+      finaltoping.innerText = toppings;
+
       finalprice.innerText =
         largePizza + largeCrust.crispy + largeTops.mushroom;
     }
@@ -117,6 +132,8 @@ btn.addEventListener("click", () => {
       price.innerText = largePizza + largeCrust.stuffed + largeTops.sausage;
       finalcrust.innerText = crust;
       finalsize.innerText = size;
+      finaltoping.innerText = toppings;
+
       finalprice.innerText =
         largePizza + largeCrust.stuffed + largeTops.sausage;
     }
@@ -124,12 +141,14 @@ btn.addEventListener("click", () => {
     if (crust == "gluten" && toppings == "cheese") {
       price.innerText = largePizza + largeCrust.gluten + largeTops.cheese;
       finalcrust.innerText = crust;
+      finaltoping.innerText = toppings;
+
       finalsize.innerText = size;
       finalprice.innerText = largePizza + largeCrust.gluten + largeTops.cheese;
     }
   }
 
-  console.log("hello there");
+  // console.log("hello there");
   //   if (size == "medium") return (price.innerHTML = mediumPizza);
   //   if (size == "large") return (price.innerHTML = largePizza);
 });
