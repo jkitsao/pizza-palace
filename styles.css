@@ -162,13 +162,28 @@
          
      }
      .hero_text_img{
-        width:10rem;
+        width:15rem;
         animation-name: example;
       animation-duration: 1.5s;
       animation-iteration-count: infinite;
       position: relative;
       animation-timing-function: ease-in-out;
     /* -webkit-animation-timing-function: ease-in-out; */
+    }
+    .hero_text{
+        margin: 0%;
+        /* color:rgb(0, 0, 0); */
+        /* font-size: 6rem; */
+        /* background-color: rgba(7, 7, 7, 0.699); */
+        padding: 2rem;
+        width:25rem;
+        /* text-align: center; */
+        left:0;
+    
+    }
+    .hero_text_h{
+        font-size: 2rem;
+        color:rgb(245, 229, 11);
     }
     .image_container{
         display:grid;
