@@ -22,13 +22,13 @@ git clone https://github.com/jkitsao/pizza-palace.git
 
 ## About me
 
-Jackson kitsao – [@YourTwitter](https://twitter.com/Jacksonkitsao5) –kitsaojackson22@gmail.com
+Jackson kitsao – [@Jacksonkitsao](https://twitter.com/Jacksonkitsao5) –kitsaojackson22@gmail.com
 
 
 
 [https://github.com/jkitsao/pizza-palace](https://github.com/jkitsao/pizza-palace)
 
-## Contributing
+## want to Contributing
 
 1. Fork it (<https://github.com/jkitsao/pizza-palace/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
