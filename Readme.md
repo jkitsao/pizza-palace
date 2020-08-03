@@ -13,7 +13,7 @@
 
 ## Installation
 
-```sh
+```bash
 git clone https://github.com/jkitsao/pizza-palace.git
 
 ```
