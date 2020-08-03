@@ -3,7 +3,7 @@
 
 
 
-![](./show.png)
+![sample image](./show.png)
 
 # How it works
 * Choose the size of pizza I want e.g Small, Medium, Large
